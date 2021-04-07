@@ -1,4 +1,4 @@
-const { scheduleJob } = require('node-schedule');
+const schedule = require('node-schedule');
 var Twit = require('twit');
 require('dotenv').config();
 
@@ -10,9 +10,10 @@ const Bot = new Twit({
 })
 
 function BotInit() {
-    const img = "/F.gif"
+    console.log("O bot está funcionando!!");
+    var img = F.gif
 
-    var time = schedule.scheduleJob({hour: 13,minute: 00}, function(){
+    var time = schedule.scheduleJob({hour: 13,minute: 12}, function(){
         Bot.post('statuses/update',
         { 
             status: img
@@ -22,3 +23,4 @@ function BotInit() {
           })
     })
 }
+BotInit();
