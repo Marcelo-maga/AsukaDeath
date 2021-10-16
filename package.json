@@ -10,9 +10,6 @@
   "author": "Marcelo Magalhães",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "file-system": "^2.2.2",
-    "fs-extra": "^10.0.0",
     "node-schedule": "^2.0.0",
     "twit": "^2.2.11"
   }
